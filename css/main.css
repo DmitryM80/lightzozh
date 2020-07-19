@@ -1352,6 +1352,92 @@ a.fio-btn {
   display: block;
   margin-top: 15px;
 }
+<<<<<<< Updated upstream
+=======
+.s-7 {
+  padding: 80px 0;
+}
+.s-7 .s7-title {
+  text-align: left;
+}
+.s-7 .s-7-title-auth {
+  font-family: "Futura PT Demi";
+  font-size: 24px;
+  /* margin-top: 70px; */
+  margin-bottom: 15px;
+}
+.s-7 .system-princip li:before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #736DE8;
+}
+.s-9 {
+  padding-bottom: 60px;
+}
+.s-9 .s-9-form-wrapper {
+  padding: 60px 0;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 30px #eee;
+  box-shadow: 5px 5px 30px #eee;
+}
+.s-9 .s9-title {
+  margin-bottom: 20px;
+}
+.s-9 .packet-descr-start {
+  margin-bottom: 30px;
+}
+.s-9 .packet-price-buttons {
+  text-align: center;
+}
+  @media (max-width: 991px) {
+.s-9 .packet-price-buttons {
+  display: block;
+}
+}
+.s-9 .packet-price-buttons button {
+  min-width: 380px;
+  padding: 15px 0;
+}
+.s-9 .btn-col-left button {
+  float: right;
+}
+.s-9 .btn-col-right button {
+  float: left;
+}
+  @media (max-width: 991px) {
+.s-9 .packet-price-buttons {
+  display: block;
+}
+
+.s-9 .btn-col-left{
+  width: 100%;
+  max-width: 100%;
+}
+.s-9 .btn-col-right{
+  width: 100%;
+  max-width: 100%;
+}
+.s-9 .btn-col-left button {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.s-9 .btn-col-right button {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+}
+>>>>>>> Stashed changes
 .s-faq {
   padding-top: 46px;
   padding-bottom: 133px; }
@@ -1455,6 +1541,24 @@ a.fio-btn {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0); }
 
+<<<<<<< Updated upstream
+=======
+.last-btn a {
+  margin: 60px auto 0;
+  min-width: 350px;
+  padding: 15px 0;
+}
+
+  @media (max-width: 991px) {
+.last-btn a {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+}
+>>>>>>> Stashed changes
 .section-bottom {
   padding-top: 50px;
   padding-bottom: 80px; }
