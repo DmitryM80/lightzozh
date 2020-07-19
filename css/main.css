@@ -58,8 +58,9 @@ h2 {
   color: #000000; }
   @media (max-width: 767px) {
     h2 {
-      font-size: 27px;
-      line-height: 1.15; } }
+font-size: 30px;
+line-height: 110%;
+} }
   @media (max-width: 767px) {
     h2 br {
       display: none; } }
@@ -190,15 +191,27 @@ header {
   padding-top: 64px;
   background: #F5F5F5;
   padding-bottom: 17px; }
+  @media (max-width: 991px) {
+    header {
+      background: #F5F5F5;
+      padding-top: 0;
+      padding-bottom: 0px; } }
   @media (max-width: 767px) {
     header {
       background: #F5F5F5;
-      padding-top: 0; } }
+      padding-top: 0;
+      padding-bottom: 0px; } }
   header .take-part {
     margin: 0 auto; }
+    @media (max-width: 1199px) {
+      header .take-part {
+        padding: 16px 28px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto; } }
     @media (max-width: 767px) {
       header .take-part {
-        padding: 8px 28px;
+        padding: 16px 28px;
         width: 100%;
         max-width: 300px;
         margin: 0 auto; } }
@@ -212,13 +225,12 @@ header {
     display: none; }
     @media (max-width: 991px) {
       header .author-header-mob {
-        display: block;
-        max-height: 255px; } }
+        display: block; 
+    margin-top: -80px; } }
     header .author-header-mob img {
       max-width: 100%;
       height: auto;
-      display: block;
-      max-width: 272px;
+      display: block; 
       margin: 0 auto; }
   header .author-header-l {
     position: absolute;
@@ -227,6 +239,9 @@ header {
     max-width: 30%;
     width: 100%;
     text-align: right; }
+    @media (max-width: 1899px) {
+  header .author-header-l  { 
+    max-width: 27%;} }
     @media (max-width: 991px) {
       header .author-header-l {
         display: none; } }
@@ -234,6 +249,16 @@ header {
       max-width: 100%;
       right: -178px;
       position: relative; }
+    @media (max-width: 1899px) {
+    header .author-header-l img {
+      left: 30%;
+      right: unset;
+      } }
+    @media (max-width: 1599px) {
+    header .author-header-l img {
+      left: 0%;
+      right: unset;
+      } }
   header .author-header-r {
     position: absolute;
     bottom: 0px;
@@ -241,6 +266,9 @@ header {
     max-width: 23%;
     width: 100%;
     text-align: left; }
+    @media (max-width: 1899px) {
+      header .author-header-r { 
+    max-width: 18%;} }
     @media (max-width: 991px) {
       header .author-header-r {
         display: none; } }
@@ -248,8 +276,27 @@ header {
       max-width: 100%;
       left: -178px;
       position: relative; }
+    @media (max-width: 1899px) {
+    header .author-header-r img {
+      left: unset;
+      right: 10%;
+      } }
+    @media (max-width: 1599px) {
+    header .author-header-r img {
+      left: unset;
+      right: 0%;
+      } }
   header .header-bottom {
     margin: 36px 0; }
+    @media (max-width: 991px) {  
+  header .header-bottom {
+    display: block;  }
+    header  .header-bottom .header-btn-col{
+    display: block; 
+    width: 100%;
+    max-width: 100%;
+    text-align: center;}
+    }
     @media (max-width: 767px) {
       header .header-bottom {
         margin: 0px 0 20px;
@@ -327,7 +374,7 @@ header {
       margin-top: 10px;
       font-size: 36px;
       line-height: 0.85;
-      margin-bottom: 23px;
+      margin-bottom: 12px;
       text-align: center; } }
   @media (max-width: 767px) {
     .h1-site-title br {
@@ -355,19 +402,18 @@ header {
   text-align: center; }
   @media (max-width: 767px) {
     .site-moto {
-      font-size: 24px;
-      line-height: 31px;
+      font-size: 20px;
+      line-height: 26px;
       text-align: center; 
       color: #000000;
-      margin-bottom: 25px;
+      margin-bottom: 69px;
       margin-top: 10px;
       text-align: center; 
       } }
   .site-moto br {
     display: inline-block; }
     @media (max-width: 767px) {
-      .site-moto br {
-        display: none; } }
+      .site-moto br { } }
 
 @media (max-width: 767px) {
   .mob-slider {
@@ -467,10 +513,24 @@ header {
     line-height: 21px;
     color: #000000;
     margin-bottom: 8px; }
+    @media (max-width: 767px) {
+  .header-bottom p.name-author {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    color: #000000;
+    margin-bottom: 6px; } 
+    }
   .header-bottom p.who-author {
     font-size: 16px;
     line-height: 21px;
     color: #000000; }
+    @media (max-width: 767px) {
+  .header-bottom p.who-author{ 
+font-size: 12px;
+line-height: 15px;
+    color: #000000; } 
+    }
   .header-bottom p.start {
     font-size: 12px;
     line-height: 15px;
@@ -486,11 +546,18 @@ header {
     margin-bottom: 0; }
     @media (max-width: 767px) {
       .header-bottom p.start {
-        font-size: 12px;
-        margin-top: 14px; } }
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px; 
+        top: -41px;
+        } }
   .header-bottom .header-btn-col {
     position: relative; }
 
+    @media (max-width: 767px) {
+  .header-bottom .header-btn-col {
+    margin-bottom: 41px; 
+        } }
 .author-l {
   text-align: left; }
   .author-l-mob{
@@ -516,6 +583,12 @@ color: #000000;
 font-size: 12px;
 line-height: 15px; 
 color: #000000;}
+    }
+    @media (max-width: 991px) {  
+.author-r {
+  display: inline-block;
+  float: right;
+    }
     }
 .take-part,
 .fio-btn,
@@ -573,6 +646,14 @@ a.fio-btn {
     line-height: 31px;
     text-align: center;
     color: #000000; }
+  @media (max-width: 991px) {
+.s-1-1 {
+    padding: 33px 0px;
+    }
+  .s-1-1 .s-1-1-up-title {
+font-size: 16px;
+line-height: 21px; }
+    }
   .s-1-1 .s1-1-title {
     font-weight: 600;
     font-size: 42px;
@@ -580,17 +661,44 @@ a.fio-btn {
     text-align: center;
     color: #000000;
     margin-top: 54px; }
+  @media (max-width: 991px) {
+  .s-1-1 .s1-1-title { 
+      font-size: 30px;
+      line-height: 110%; 
+      text-align: center;
+      margin-top: 49px;
+      margin-bottom: 48px;
+}
+    }
   .s-1-1 .col-s-p {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
     color: #000000; }
+  @media (max-width: 991px) {
+  .s-1-1 .col-s-p {
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center; 
+      color: #000000;
+      margin-bottom: 65px;
+ }
+    }
   .s-1-1 .s-1-under-title {
     font-size: 24px;
     line-height: 31px;
     text-align: center;
     color: #000000;
     margin-top: 30px; }
+
+  @media (max-width: 991px) {
+  .s-1-1 .s-1-under-title {
+font-weight: normal;
+font-size: 20px;
+line-height: 30px; 
+text-align: center;
+}
+}
   .s-1-1 img {
     max-width: 100%;
     height: auto;
@@ -657,7 +765,7 @@ a.fio-btn {
   padding-bottom: 20px; }
   @media (max-width: 767px) {
     .s-1 {
-      padding-top: 47px;
+      padding-top: 83px;
       padding-bottom: 0px; } }
   .s-1 h2 {
     margin-bottom: 64px; }
@@ -674,9 +782,12 @@ a.fio-btn {
     top: -20px; }
     @media (max-width: 767px) {
       .s-1 .s-1-img-block {
-        max-width: 158px;
-        margin: 0 auto;
-        display: block; } }
+        max-width: 219px;
+        margin: 0 auto 22px;
+        display: block;
+        top: -6px; 
+        } 
+      }
   .s-1 .aligned-center {
     margin: 0px 0;
     display: -webkit-box;
@@ -704,6 +815,13 @@ a.fio-btn {
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .s-1 ul li { 
+          font-size: 16px;
+          line-height: 21px;
+          margin-bottom: 14px;
+          }
+      }
       .s-1 ul li:before {
         position: absolute;
         width: 8px;
@@ -721,33 +839,39 @@ a.fio-btn {
   padding-bottom: 107px; }
   @media (max-width: 767px) {
     .s-2 {
-      padding-bottom: 41px;
-      padding-top: 51px; } }
+      padding-bottom: 10px;
+      padding-top: 0; } }
+    @media (max-width: 767px) {
+   .s-2   .s-2-row{
+     -webkit-flex-direction: column-reverse;
+         -ms-flex-direction: column-reverse;
+             flex-direction: column-reverse;
+   }
+   }
   .s-2 .s2-title {
     margin-bottom: 20px;
     margin-top: 43px;
     text-align: left; }
     @media (max-width: 767px) {
       .s-2 .s2-title {
-        margin-bottom: 14px;
-        font-size: 24px;
-        text-align: center; } }
+    margin-bottom: 50px; 
+    margin-top: 15px;
+font-size: 30px;
+line-height: 110%;
+text-align: left;
+ } }
     @media (max-width: 991px) {
       .s-2 .s2-title br {
         display: none; } }
     .s-2 .s2-title span {
       color: #000000; }
       .s-2 .s2-title span:before {
-        background: #ff813e;
-        top: 40px; }
+        background: #FFEB82;
+        top: 40px; 
+height: 31px;}
         @media (max-width: 991px) {
-          .s-2 .s2-title span:before {
-            display: none; } }
-      @media (max-width: 991px) {
-        .s-2 .s2-title span {
-          border-bottom: 2px solid #ff813e;
-          padding-bottom: 0px;
-          display: inline; } }
+          .s-2 .s2-title span:before { 
+            top: 0;} } 
   .s-2 .s2-descr {
     font-size: 20px;
     color: #010101;
@@ -778,11 +902,11 @@ a.fio-btn {
     color: #000000; }
     @media (max-width: 767px) {
       .s-2 .s2-text {
-        font-size: 14px;
-        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
         margin-bottom: 16px;
-        position: relative;
-        margin-bottom: 14px; } }
+        position: relative;  } }
     @media (max-width: 767px) {
       .s-2 .s2-text.text-center {
         text-align: center !important; } }
@@ -845,16 +969,44 @@ a.fio-btn {
     font-size: 42px;
     line-height: 110%;
     color: #000000;
-    font-family: "Futura PT Heavy"; }
+    font-family: "Futura PT Heavy"; } 
+    @media (max-width: 767px) {
+  .s-3 .s3-title {
+font-size: 30px;
+line-height: 110%;
+margin-bottom: 17px;
+ }
+  }
   .s-3 .s3-text {
     font-size: 20px;
     line-height: 30px;
     color: #000000; }
+    @media (max-width: 767px) {
+  .s-3 .s3-text {
+font-size: 16px;
+line-height: 24px;
+    color: #000000; }
+      }
   .s-3 .s3-text-col .s3-title {
     margin-top: 26px;
     margin-bottom: 18px; }
+    @media (max-width: 767px) {
+  .s-3 .s3-text-col{
+    padding-left: 0;
+    padding-right: 0;
+  }
+        .s-3 .s3-text-col .s3-title {
+          font-size: 24px;
+          line-height: 110%;
+          margin-bottom: 10px;
+              }
+        }
   .s-3 .row-items {
     margin-bottom: 62px; }
+    @media (max-width: 767px) {
+  .s-3 .row-items {
+    margin-bottom: 23px; }
+        }
   .s-3 ul {
     margin-left: 0;
     padding-left: 15px;
@@ -865,6 +1017,12 @@ a.fio-btn {
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 10px; }
+    @media (max-width: 767px) {
+    .s-3 ul li {
+      font-size: 16px;
+      line-height: 24px;
+       }
+      }
       .s-3 ul li:before {
         position: absolute;
         width: 8px;
@@ -880,6 +1038,15 @@ a.fio-btn {
     width: 100%;
     text-align: center;
     font-size: 32px; }
+
+    @media (max-width: 991px) {
+  .s-3 .knowblege {
+font-size: 24px;
+line-height: 30px;
+    margin-top: 23px;
+    margin-bottom: 7px;
+}
+}
     .s-3 .knowblege span {
       position: relative; }
       .s-3 .knowblege span:before {
@@ -900,8 +1067,13 @@ a.fio-btn {
     color: #000000;
     width: 100%; }
     @media (max-width: 767px) {
+  .s-3 .s3-under-block {
+      font-size: 18px;
+      line-height: 23px;
+      }
       .s-3 .s3-under-block br {
-        display: none; } }
+        display: none; }  
+      }
 
 .s-8 {
   padding-bottom: 87px;
@@ -909,10 +1081,18 @@ a.fio-btn {
   padding-top: 24px; }
   @media (max-width: 767px) {
     .s-8 {
-      padding-bottom: 15px; } }
+      padding-bottom: 15px;
+      padding-top: 38px; } }
   .s-8 .s-8-row {
     position: relative;
     padding-top: 113px; }
+
+      @media (max-width: 991px) {
+      .s-8 .s-8-row {
+        position: relative;
+        padding-top: 31px; 
+        padding-bottom: 105px;}
+    }
     .s-8 .s-8-row:before {
       background: url("../img/s-8-bg.png");
       background-position: center top;
@@ -928,7 +1108,7 @@ a.fio-btn {
       left: -5%;
       top: -5%;
       height: 100%; }
-      @media (max-width: 991px) {
+      @media (max-width: 767px) {
         .s-8 .s-8-row:before {
           -webkit-flex-direction: column;
           -ms-flex-direction: column;
@@ -938,8 +1118,8 @@ a.fio-btn {
           background: url("../img/s-8-row-mob.png");
           background-position: center  top;
           background-repeat: no-repeat;
-          -webkit-background-size: cover;
-          background-size: cover; } }
+          -webkit-background-size: contain;
+          background-size: contain; } }
       @media (max-width: 767px) {
         .s-8 .s-8-row:before {
           margin: 0;
@@ -951,10 +1131,10 @@ a.fio-btn {
     margin-bottom: 20px; }
     @media (max-width: 767px) {
       .s-8 .s8-title {
-        font-size: 27px;
-        margin-bottom: 16px;
-        margin-top: 2px;
-        display: none; } }
+        font-size: 30px;
+        line-height: 110%;
+        margin-bottom: 43px;
+        margin-top: 2px;  } }
   .s-8 .s8-text {
     position: relative;
     z-index: 2;
@@ -966,21 +1146,7 @@ a.fio-btn {
       .s-8 .s8-text {
         font-size: 14px;
         margin-bottom: 15px;
-        line-height: 1.4; } }
-  .s-8 .s8-title-h3 {
-    position: relative;
-    z-index: 2;
-    font-size: 28px;
-    font-family: "Futura PT Demi";
-    line-height: 1.188;
-    padding: 10px 0px;
-    text-align: left; }
-    @media (max-width: 767px) {
-      .s-8 .s8-title-h3 {
-        font-size: 18px;
-        margin-bottom: 3px; } }
-    .s-8 .s8-title-h3 span {
-      display: block; }
+        line-height: 1.4; } } 
   .s-8 .s-8-pic {
     top: -19px;
     left: -149px;
@@ -1001,6 +1167,12 @@ a.fio-btn {
     text-align: center;
     color: #000000;
     padding-bottom: 64px; }
+    @media (max-width: 991px) {
+  .s-8 .title-way {
+font-size: 24px;
+line-height: 110%;
+}
+}
   .s-8 .s8-num {
     font-size: 60px;
     line-height: 30px;
@@ -1013,11 +1185,25 @@ a.fio-btn {
     text-align: center;
     color: #000000;
     margin-top: 20px; }
+    @media (max-width: 767px) {
+      .s-8 .s8-title-h3 {
+        font-size: 18px;
+        line-height: 30px;
+    margin-bottom: 21px;
+    margin-top: 32px;} }
+    .s-8 .s8-title-h3 span {
+      display: block; }
   .s-8 .s8-text {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
     color: #000000; }
+    @media (max-width: 767px) { 
+  .s-8 .s8-text { 
+font-size: 16px;
+line-height: 21px; 
+    margin-bottom: 52px;}
+}
 
 .s-9 {
   padding-bottom: 110px; }
@@ -1211,9 +1397,13 @@ a.fio-btn {
   padding: 103px 0px 127px; }
   @media (max-width: 767px) {
     .s-4 {
-      padding: 75px 0px 27px; } }
+      padding: 55px 0px 27px; } }
   .s-4 .s4-title {
     margin-bottom: 49px; }
+  @media (max-width: 767px) {
+  .s-4 .s4-title {
+    margin-bottom: 72px; }
+     }
   .s-4 .img-box {
     min-height: 150px;
     text-align: center;
@@ -1240,11 +1430,10 @@ a.fio-btn {
         display: block;
         margin-bottom: 16px; } }
     @media (max-width: 767px) {
-      .s-4 .img-box img {
-        max-width: 85px; } }
+      .s-4 .img-box img { } }
   @media (max-width: 767px) {
     .s-4 .s-4-col {
-      margin-bottom: 39px; } }
+      margin-bottom: 79px; } }
   .s-4 .s-4-title-text {
     font-size: 24px;
     font-family: "Futura PT Demi";
@@ -1252,7 +1441,8 @@ a.fio-btn {
     text-align: center; }
     @media (max-width: 767px) {
       .s-4 .s-4-title-text {
-        font-size: 14px; } }
+        font-size: 14px; 
+    margin: 10px 0 0; } }
   .s-4 .s-4-text {
     font-size: 18px;
     text-align: center; }
@@ -1263,16 +1453,21 @@ a.fio-btn {
   font-family: "Futura PT Demi";
   font-size: 20px;
   text-align: center;
-}
-.s-4 .s-4-title-text {
-  font-family: "Futura PT Book";
-  font-size: 20px;
-}
-.s-4 .s-4-text {
-  font-size: 20px;
-}
+}  
 .s-5 .s5-title {
   margin-bottom: 70px;
+}
+    @media (max-width: 991px) {
+.s-5 .img-box img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+}
+    @media (max-width: 767px) {
+.s-5 .s5-title {
+  margin-bottom: 5px;
+}
 }
 .s-5 .s-5-title-auth {
   font-family: "Futura PT Demi";
@@ -1280,13 +1475,33 @@ a.fio-btn {
   margin-top: 70px;
   margin-bottom: 20px;
 }
+  @media (max-width: 991px) {
+.s-5 .s-5-title-auth {
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 13px; 
+}
+}
 .s-5 .in-instagram-account {
   list-style: none;
   padding-left: 20px;
 }
+
+  @media (max-width: 767px) {
+.s-5 .in-instagram-account{
+    margin-bottom: 38px;
+}
+}
 .s-5 .in-instagram-account li {
   font-size: 20px;
   position: relative;
+}
+  @media (max-width: 767px) {
+.s-5 .in-instagram-account li {
+font-size: 16px;
+line-height: 21px;
+    margin-bottom: 9px;
+}
 }
 .s-5 .in-instagram-account li:before {
   content: "";
@@ -1309,6 +1524,12 @@ a.fio-btn {
   background-color: #f5f5f5;
   padding: 70px 0;
 }
+    @media (max-width: 767px) {
+.s-6 {
+  background-color: #f5f5f5;
+  padding: 50px 0 37px;
+}
+}
 .s-6 .on-maraphone-list {
   list-style: none;
   text-align: center;
@@ -1319,6 +1540,22 @@ a.fio-btn {
   font-family: "Futura PT Demi";
   font-size: 24px;
   margin-right: 60px;
+}
+    @media (max-width: 767px) {
+.s-6 .on-maraphone-list {
+  padding-left: 0;
+  margin-left: 0;
+}
+.s-6 .on-maraphone-list li {
+font-size: 14px;
+line-height: 110%;
+margin-right: 5px;
+}
+}
+    @media (max-width: 350px) { 
+.s-6 .on-maraphone-list li { 
+margin-right: 0px;
+}
 }
 .s-6 .icos-check {
   position: relative;
@@ -1340,10 +1577,26 @@ a.fio-btn {
   text-align: center;
   margin: 20px 0;
 }
+    @media (max-width: 767px) {
+.s-6 .s-6-col{
+  margin-bottom: 16px;
+}
+.s-6 .s-6-title-text {
+font-size: 20px;
+line-height: 30px;
+margin: 8px 0;
+}
+}
 .s-6 .s-6-text {
   font-family: "Futura PT Book";
   font-size: 20px;
   text-align: center;
+}
+    @media (max-width: 767px) {
+.s-6 .s-6-text {
+font-size: 16px;
+line-height: 24px;
+}
 }
 .s-6 .s-6-text b {
   font-family: "Futura PT Demi";
@@ -1352,92 +1605,16 @@ a.fio-btn {
   display: block;
   margin-top: 15px;
 }
-<<<<<<< Updated upstream
-=======
+    @media (max-width: 767px) {
+.s-6 .s-6-text b {
+font-size: 16px;
+line-height: 24px;
+}
+}
+    @media (max-width: 767px) {
 .s-7 {
-  padding: 80px 0;
-}
-.s-7 .s7-title {
-  text-align: left;
-}
-.s-7 .s-7-title-auth {
-  font-family: "Futura PT Demi";
-  font-size: 24px;
-  /* margin-top: 70px; */
-  margin-bottom: 15px;
-}
-.s-7 .system-princip li:before {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -20px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #736DE8;
-}
-.s-9 {
-  padding-bottom: 60px;
-}
-.s-9 .s-9-form-wrapper {
-  padding: 60px 0;
-  border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 30px #eee;
-  box-shadow: 5px 5px 30px #eee;
-}
-.s-9 .s9-title {
-  margin-bottom: 20px;
-}
-.s-9 .packet-descr-start {
-  margin-bottom: 30px;
-}
-.s-9 .packet-price-buttons {
-  text-align: center;
-}
-  @media (max-width: 991px) {
-.s-9 .packet-price-buttons {
-  display: block;
 }
 }
-.s-9 .packet-price-buttons button {
-  min-width: 380px;
-  padding: 15px 0;
-}
-.s-9 .btn-col-left button {
-  float: right;
-}
-.s-9 .btn-col-right button {
-  float: left;
-}
-  @media (max-width: 991px) {
-.s-9 .packet-price-buttons {
-  display: block;
-}
-
-.s-9 .btn-col-left{
-  width: 100%;
-  max-width: 100%;
-}
-.s-9 .btn-col-right{
-  width: 100%;
-  max-width: 100%;
-}
-.s-9 .btn-col-left button {
-  float: none;
-  min-width: auto;
-  width: 100%;
-  max-width: 370px;
-  margin: 0 auto;
-}
-.s-9 .btn-col-right button {
-  float: none;
-  min-width: auto;
-  width: 100%;
-  max-width: 370px;
-  margin: 0 auto;
-}
-}
->>>>>>> Stashed changes
 .s-faq {
   padding-top: 46px;
   padding-bottom: 133px; }
@@ -1541,24 +1718,6 @@ a.fio-btn {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0); }
 
-<<<<<<< Updated upstream
-=======
-.last-btn a {
-  margin: 60px auto 0;
-  min-width: 350px;
-  padding: 15px 0;
-}
-
-  @media (max-width: 991px) {
-.last-btn a {
-  float: none;
-  min-width: auto;
-  width: 100%;
-  max-width: 370px;
-  margin: 0 auto;
-}
-}
->>>>>>> Stashed changes
 .section-bottom {
   padding-top: 50px;
   padding-bottom: 80px; }
@@ -2876,3 +3035,48 @@ a.fio-btn {
       padding-top: 21px; }
     .box-messenger .messe-ico img {
       max-width: 30px; }
+
+  @media (max-width: 991px) {
+.last-btn a {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+}
+
+  @media (max-width: 991px) {
+.s-9 .packet-price-buttons {
+  display: block;
+}
+
+.s-9 .btn-col-left{
+  width: 100%;
+  max-width: 100%;
+}
+.s-9 .btn-col-right{
+  width: 100%;
+  max-width: 100%;
+}
+.s-9 .btn-col-left button {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.s-9 .btn-col-right button {
+  float: none;
+  min-width: auto;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+}
+
+  @media (max-width: 991px) {
+.s-9 .packet-price-buttons {
+  display: block;
+}
+}
