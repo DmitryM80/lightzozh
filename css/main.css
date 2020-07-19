@@ -852,18 +852,20 @@ a.fio-btn {
         border-radius: 50%; }
   .s-3 .knowblege {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-size: 32px; }
     .s-3 .knowblege span {
       position: relative; }
       .s-3 .knowblege span:before {
         position: absolute;
-        width: 8px;
-        height: 1px;
-        left: 0px;
-        top: 7px;
+        width: 26px;
+        height: 2px;
+        left: -4px;
+        top: 18px;
         background: #FF4343;
         content: "";
-        display: block; }
+        display: block;
+        transform: rotate(-65deg); }
   .s-3 .s3-under-block {
     font-weight: 600;
     font-size: 24px;
