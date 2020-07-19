@@ -1389,18 +1389,24 @@ a.fio-btn {
     @media (max-width: 767px) {
       .s-faq .panel {
         padding: 7px 0px; } }
-  .s-faq .panel-title a {
+  .s-faq .panel-title a.collapsed {
     font-size: 24px;
     font-family: 'Futura PT Demi';
-    color: #756de8;
+    color: #756de8 !important;
     line-height: 1.2;
     position: relative;
     width: 100%;
     display: block;
     padding-right: 10px; }
-
-    .s-faq .panel-title .accordion-toggle a {
-    color: #333; }
+  .s-faq .panel-title a {
+    font-size: 24px;
+    font-family: 'Futura PT Demi';
+    color: #333 !important;
+    line-height: 1.2;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-right: 10px; }
     @media (max-width: 767px) {
       .s-faq .panel-title a {
         font-size: 16px; } }
@@ -1420,7 +1426,7 @@ a.fio-btn {
         font-size: 16px;
         line-height: 1; } }
     .s-faq .panel-body p {
-      font-size: 20px;
+      font-size: 24px;
       font-family: "Futura PT Book";
       color: black;
       line-height: normal; }
