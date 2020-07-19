@@ -91,6 +91,7 @@ h2 {
     .navbar {
       padding: 0;
       height: 81px;
+      background: #F5F5F5;
       -webkit-box-shadow: 0 0px 0px 0px #fff;
               box-shadow: 0 0px 0px 0px #fff; } }
 
@@ -205,8 +206,8 @@ header {
     position: relative; }
     @media (max-width: 767px) {
       header .container {
-        padding-left: 0;
-        padding-right: 0; } }
+        padding-left: 10px;
+        padding-right: 10px; } }
   header .author-header-mob {
     display: none; }
     @media (max-width: 991px) {
@@ -303,7 +304,8 @@ header {
     .top-descrip {
       font-size: 11px;
       margin-bottom: 18px;
-      margin-top: 10px;
+      margin-top: 0px;
+      padding-top: 10px;
       text-align: center; } }
 
 .h1-site-title {
@@ -347,16 +349,20 @@ header {
 .site-moto {
   margin-bottom: 68px;
   margin-top: 14px;
-  color: #676767;
+  color: #000000;
   font-size: 24px;
   line-height: 31px;
   text-align: center; }
   @media (max-width: 767px) {
     .site-moto {
-      font-size: 16px;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center; 
+      color: #000000;
       margin-bottom: 25px;
       margin-top: 10px;
-      text-align: center; } }
+      text-align: center; 
+      } }
   .site-moto br {
     display: inline-block; }
     @media (max-width: 767px) {
@@ -487,10 +493,30 @@ header {
 
 .author-l {
   text-align: left; }
+  .author-l-mob{
+    display: none;
+  }
 
 .author-r {
   text-align: right; }
 
+    @media (max-width: 991px) {  
+.author-l {
+  display: none;
+    }
+  .author-l-mob{ 
+    display: inline-block;
+  text-align: left; 
+font-size: 12px;
+line-height: 15px; 
+color: #000000;
+  }
+.author-r {
+  text-align: right; 
+font-size: 12px;
+line-height: 15px; 
+color: #000000;}
+    }
 .take-part,
 .fio-btn,
 a.fio-btn {
@@ -1273,6 +1299,13 @@ a.fio-btn {
   height: 6px;
   border-radius: 50%;
   background-color: #736DE8;
+}
+    @media (max-width: 767px) {
+.s-5-col .img-box img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 }
 .s-6 {
   background-color: #f5f5f5;
